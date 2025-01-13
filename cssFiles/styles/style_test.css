@@ -1,0 +1,87 @@
+span {
+  font-style: italic;
+}
+
+.meow {
+  font-weight: bold;
+}
+
+.animated-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  opacity: 0;
+  /* Початково текст невидимий */
+  animation: slideIn 2s forwards;
+  /* Анімація тривалістю 2 секунди */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    /* Текст невидимий на початку */
+    transform: translateX(100%);
+    /* Текст знаходиться за межами екрана справа */
+  }
+
+  100% {
+    opacity: 1;
+    /* Текст стає видимим */
+    transform: translateX(0);
+    /* Текст переміщається до свого початкового положення */
+  }
+}
+
+ol {
+  list-style-type: none;
+  /* Вимикає стандартні маркери списку */
+  counter-reset: item;
+  /* Скидає лічильник */
+}
+
+ol li:before {
+  content: counters(item, ".") ".";
+  /* Додає "Глава" і номер до пункту списку */
+  counter-increment: item;
+  /* Збільшує лічильник для кожного пункту */
+}
+
+ol ol li:before {
+  content: counters(item, ".") ".";
+  /* Додає лише вкладений номер (без "Глава") */
+  counter-increment: item;
+  /* Збільшує лічильник для підпунктів */
+}
+
+
+ul {
+  list-style: none;
+}
+
+/* меню */
+header {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.menu li>,
+.menu>a {
+  display: inline-block;
+}
+
+menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 1.5rem;
+}
