@@ -83,7 +83,7 @@ nav {
 .title_logo h1 {
   font-size: 40px;
   color: #683548;
-  font-family: "LXGW WenKai Mono TC", serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   margin-bottom: 25px;
   text-align: center;
@@ -133,11 +133,8 @@ main {
 }
 
 .info {
-  padding: 20px 0;
-  margin-left: 90px;
+  padding: 10px 0;
   margin-right: 90px;
-  margin-top: 40px;
-  margin-bottom: 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   flex: 1;
@@ -145,25 +142,37 @@ main {
   color: #333;
 }
 
-.info ol {
-  list-style-type: decimal;
+.info h1 {
   margin-left: 90px;
   margin-right: 90px;
   margin-top: 20px;
-}
-
-.info li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
 }
 
 .info h2 {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .info p {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.info ul li {
+  margin-left: 120px;
+  margin-right: 90px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
 }
 
 /* слайдер */
@@ -175,19 +184,27 @@ main {
   width: 320px;
   height: 100vh;
   padding: 10px;
+  margin-left: 90px;
   overflow-y: auto;
+}
+
+.navigation {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #555;
+  text-align: center;
 }
 
 .sidebar h1 {
   font-size: 20px;
-  margin-bottom: 10px;
   color: #555;
-  font-weight: bold;
-  text-align: center;
+  text-align: left;
+  margin: 5px 5px;
+  font-weight: normal;
+  display: block;
 }
-
 .sidebar h2 {
-  font-size: 20px;
+  font-size: 18px;
   color: #555;
   text-align: left;
   margin: 5px 5px;
@@ -197,7 +214,7 @@ main {
 
 .sidebar hr {
   width: 100%;
-  border: 0.5px solid #555;
+  border: 2px solid #ccc;
 }
 
 .sidebar ol {
@@ -216,13 +233,13 @@ main {
   transition: 0.3s;
   display: inline;
 }
+.sidebar a:hover {
+  text-decoration:underline;
+  color: #a64166;
+}
 
 .sidebar ol ol {
   display: none;
-}
-
-.submenu-toggle:checked+plus-label {
-  display: block;
 }
 
 .submenu-toggle {
@@ -234,10 +251,11 @@ main {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-size: 30px;
 }
 
 .plus-label:hover {
-  color: #333;
+  color: #a64166;
 }
 
 .submenu-toggle:checked+.plus-label+ol {
@@ -254,25 +272,21 @@ main {
   counter-increment: item;
 }
 
-.list ol>li>h2:before {
+.list ol>li>h1:before {
   content: counter(item) ". ";
 }
 
-.list ol>li>section>h2:before {
+.list ol>li>section>h1:before {
   content: counter(item) ". ";
 }
 
-.list ol>li>input[type="checkbox"]+label>h2:before {
+.list ol>li>input[type="checkbox"]+label>h1:before {
   content: counter(item) ". ";
 }
 
 .list ol ol {
   list-style-type: none;
   counter-reset: subitem;
-}
-
-.list ol>li>label {
-  display: flex;
 }
 
 .list ol ol>li {
