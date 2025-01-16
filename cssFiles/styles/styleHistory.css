@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #b9b6d7;
 }
 
 * {
@@ -48,6 +48,7 @@ nav {
 .menu li a:hover {
   background: #683548;
   color: white;
+  border-radius: 8px;
 }
 
 .submenu {
@@ -83,10 +84,13 @@ nav {
 .title_logo h1 {
   font-size: 40px;
   color: #683548;
-  font-family: "Bitter", serif;
+  font-family: "LXGW WenKai Mono TC", serif;
   font-style: normal;
   margin-bottom: 25px;
   text-align: center;
+}
+.title_logo a {
+  text-decoration: none;
 }
 
 /* шапка */
@@ -133,10 +137,11 @@ main {
 }
 
 .info {
-  padding: 10px 0;
+  padding: 20px 0;
   margin-right: 90px;
+  margin-left: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);;
   flex: 1;
   overflow-y: auto;
   color: #333;
@@ -179,25 +184,27 @@ main {
 .sidebar {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   width: 320px;
   height: 100vh;
-  padding: 10px;
+  padding: 10px 0;
   margin-left: 90px;
   overflow-y: auto;
 }
 
 .navigation {
   font-size: 24px;
-  margin-bottom: 10px;
-  color: #555;
+  margin: 5px 5px;
+  color: #333;
   text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
 .sidebar h1 {
   font-size: 20px;
-  color: #555;
+  color: #333;
   text-align: left;
   margin: 5px 5px;
   font-weight: normal;
@@ -205,20 +212,21 @@ main {
 }
 .sidebar h2 {
   font-size: 18px;
-  color: #555;
+  color: #333;
   text-align: left;
   margin: 5px 5px;
   font-weight: normal;
   display: block;
 }
 
-.sidebar hr {
-  width: 100%;
-  border: 2px solid #ccc;
+.hr1 {
+  width: 90%;
+  border: 2px solid #b9b6d7;
+  margin: 10px auto;
 }
 
 .sidebar ol {
-  color: #555;
+  color: #333;
   position: relative;
   margin: 20px 20px;
 }
@@ -229,7 +237,7 @@ main {
 
 .sidebar a {
   text-decoration: none;
-  color: #555;
+  color: #333;
   transition: 0.3s;
   display: inline;
 }
