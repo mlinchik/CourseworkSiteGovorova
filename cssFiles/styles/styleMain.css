@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #b9b6d7;
+  background-color: #b5c8f2;
 }
 
 * {
@@ -97,8 +97,8 @@ nav {
 .header {
   width: 100%;
   height: 400px;
-  background: linear-gradient(rgba(104, 53, 72, 0.4), rgba(104, 53, 72, 0.4)),
-    url('../images/headerbg.jpg');
+  background: linear-gradient(rgba(7, 0, 135, 0.2), rgba(4, 0, 52, 0.2)),
+  url('../images/headerbg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -111,6 +111,7 @@ nav {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .title h1 {
