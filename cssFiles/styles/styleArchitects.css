@@ -1,0 +1,348 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #acbae0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Bitter", serif;
+  }
+  
+  /* меню */
+  nav {
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .menu {
+    display: inline-flex;
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  .menu li {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  .arh::after {
+    content: ' ▼';
+    font-size: 14px;
+  }
+  
+  .menu li a:hover {
+    background: #683548;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .submenu {
+    list-style: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+    padding: 5px 0;
+    width: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    top: 148%;
+    border-top: 7px solid #683548;
+    left: 0;
+  }
+  
+  .submenu li {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 5px 0;
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .menu li:hover>.submenu {
+    display: inline-flex;
+  }
+  
+  /*лого*/
+  
+  .title_logo h1 {
+    font-size: 40px;
+    color: #683548;
+    font-family: "LXGW WenKai Mono TC", serif;
+    font-style: normal;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .title_logo a {
+    text-decoration: none;
+  }
+  
+  /* шапка */
+  .header {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(7, 0, 135, 0.2), rgba(4, 0, 52, 0.2)),
+      url('../images/architects.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .title {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    animation: an1 2s forwards;
+  }
+  
+  @keyframes an1 {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* основний вміст */
+  main {
+    display: flex;
+  }
+  
+  .info {
+    padding: 20px 0;
+    margin-right: 90px;
+    margin-left: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);;
+    flex: 1;
+    overflow-y: auto;
+    color: #333;
+  }
+  
+  .info h1 {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .info h2 {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .info p {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  .info ul li {
+    margin-left: 120px;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  /* слайдер */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    height: 100vh;
+    padding: 10px 0;
+    margin-left: 90px;
+    overflow-y: auto;
+  }
+  
+  .navigation {
+    font-size: 24px;
+    margin: 5px 5px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  
+  .sidebar h1 {
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    margin: 5px 5px;
+    font-weight: normal;
+    display: block;
+  }
+  .sidebar h2 {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    margin: 5px 5px;
+    font-weight: normal;
+    display: block;
+  }
+  
+  .hr1 {
+    width: 90%;
+    border: 2px solid #acbae0;
+    margin: 10px auto;
+  }
+  
+  .sidebar ol {
+    color: #333;
+    position: relative;
+    margin: 20px 20px;
+  }
+  
+  .sidebar ol li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    display: inline;
+  }
+  .sidebar a:hover {
+    text-decoration:underline;
+    color: #a64166;
+  }
+  
+  .sidebar ol ol {
+    display: none;
+  }
+  
+  .submenu-toggle {
+    display: none;
+  }
+  
+  .plus-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+  }
+  
+  .plus-label:hover {
+    color: #a64166;
+  }
+  
+  .submenu-toggle:checked+.plus-label+ol {
+    display: block;
+  }
+  
+  /* Лічильник */
+  .list ol {
+    list-style-type: none;
+    counter-reset: item;
+  }
+  
+  .list ol>li {
+    counter-increment: item;
+  }
+  
+  .list ol>li>h1:before {
+    content: counter(item) ". ";
+  }
+  
+  .list ol>li>section>h1:before {
+    content: counter(item) ". ";
+  }
+  
+  .list ol>li>input[type="checkbox"]+label>h1:before {
+    content: counter(item) ". ";
+  }
+  
+  .list ol ol {
+    list-style-type: none;
+    counter-reset: subitem;
+  }
+  
+  .list ol ol>li {
+    counter-increment: subitem;
+  }
+  
+  .list ol ol>li>h2:before {
+    content: counter(item) "." counter(subitem) ". ";
+  }
+  
+  .list ol ol>li>section>h2:before {
+    content: counter(item) "." counter(subitem) ". ";
+  }
+  
+  /* футер */
+  .footer {
+    background: #683548;
+    background-position: center;
+    padding: 20px 90px;
+    color: #fff;
+  }
+  
+  .line {
+    width: 100%;
+    margin: 5px 0 auto;
+    border: 0.5px solid #fff;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 100px;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    margin-bottom: 10px;
+  }
+  
+  .about h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    margin: 5px 0;
+  }

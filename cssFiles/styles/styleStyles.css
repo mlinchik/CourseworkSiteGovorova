@@ -3,7 +3,7 @@ html {
   }
   
   body {
-    background-color: #adafb9;
+    background-color: #acbae0;
   }
   
   * {
@@ -98,7 +98,7 @@ html {
     width: 100%;
     height: 400px;
     background: linear-gradient(rgba(7, 0, 135, 0.2), rgba(4, 0, 52, 0.2)),
-    url('../images/war.jpg');
+      url('../images/styles.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -133,12 +133,18 @@ html {
   }
   
   /* основний вміст */
+  main {
+    display: flex;
+  }
+  
   .info {
     padding: 20px 0;
     margin-right: 90px;
-    margin-left: 90px;
+    margin-left: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.7);;
+    flex: 1;
+    overflow-y: auto;
     color: #333;
   }
   
@@ -151,6 +157,14 @@ html {
     text-align: center;
   }
   
+  .info h2 {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
   .info p {
     margin-left: 90px;
     margin-right: 90px;
@@ -159,8 +173,141 @@ html {
     font-size: 18px;
   }
   
-  .info a {
-    color: black;
+  .info ul li {
+    margin-left: 120px;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  /* слайдер */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    height: 100vh;
+    padding: 10px 0;
+    margin-left: 90px;
+    overflow-y: auto;
+  }
+  
+  .navigation {
+    font-size: 24px;
+    margin: 5px 5px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  
+  .sidebar h1 {
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    margin: 5px 5px;
+    font-weight: normal;
+    display: block;
+  }
+  .sidebar h2 {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    margin: 5px 5px;
+    font-weight: normal;
+    display: block;
+  }
+  
+  .hr1 {
+    width: 90%;
+    border: 2px solid #acbae0;
+    margin: 10px auto;
+  }
+  
+  .sidebar ol {
+    color: #333;
+    position: relative;
+    margin: 20px 20px;
+  }
+  
+  .sidebar ol li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    display: inline;
+  }
+  .sidebar a:hover {
+    text-decoration:underline;
+    color: #a64166;
+  }
+  
+  .sidebar ol ol {
+    display: none;
+  }
+  
+  .submenu-toggle {
+    display: none;
+  }
+  
+  .plus-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+  }
+  
+  .plus-label:hover {
+    color: #a64166;
+  }
+  
+  .submenu-toggle:checked+.plus-label+ol {
+    display: block;
+  }
+  
+  /* Лічильник */
+  .list ol {
+    list-style-type: none;
+    counter-reset: item;
+  }
+  
+  .list ol>li {
+    counter-increment: item;
+  }
+  
+  .list ol>li>h1:before {
+    content: counter(item) ". ";
+  }
+  
+  .list ol>li>section>h1:before {
+    content: counter(item) ". ";
+  }
+  
+  .list ol>li>input[type="checkbox"]+label>h1:before {
+    content: counter(item) ". ";
+  }
+  
+  .list ol ol {
+    list-style-type: none;
+    counter-reset: subitem;
+  }
+  
+  .list ol ol>li {
+    counter-increment: subitem;
+  }
+  
+  .list ol ol>li>h2:before {
+    content: counter(item) "." counter(subitem) ". ";
+  }
+  
+  .list ol ol>li>section>h2:before {
+    content: counter(item) "." counter(subitem) ". ";
   }
   
   /* футер */

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #b5c8f2;
+  background-color: #acbae0;
 }
 
 * {
@@ -222,7 +222,7 @@ main {
 
 .hr1 {
   width: 90%;
-  border: 2px solid #b5c8f2;
+  border: 2px solid #acbae0;
   margin: 10px auto;
 }
 
