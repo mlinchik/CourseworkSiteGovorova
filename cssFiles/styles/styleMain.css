@@ -160,18 +160,36 @@ nav {
   margin-bottom: 30px;
   font-size: 18px;
 }
-
+.info h2 {
+  font-size: 28px;
+  margin: 0px 20px;
+  text-align: center;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
 .buttons {
-  justify-content: left; /* Центруємо кнопки по горизонталі */
+  text-align: center;
 }
 
 .buttons a {
-  padding: 8px 16px; /* Внутрішні відступи для кнопок */
-  background-color: #683548; /* Колір фону кнопок */
-  text-decoration: none; /* Забираємо підкреслення у посилань */
-  border-radius: 4px; /* Згладжуємо кути кнопок */
-  color: #fff; /* Колір тексту */ /* Робимо кнопки гнучкими для тексту */
-  justify-content: left; /* Центруємо текст у кнопці по горизонталі */
+  padding: 8px 16px;
+  background-color: #a64166;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  justify-content: center;
+}
+.b1:hover {
+  background: #678ecc;
+}
+.b2:hover {
+  background: #9a7dc5;
+}
+.b3:hover {
+  background: #7dae73;
+}
+.b4:hover {
+  background: #7d8192;
 }
 
 /* футер */
