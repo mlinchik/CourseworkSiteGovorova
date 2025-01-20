@@ -97,7 +97,7 @@ html {
   .header {
     width: 100%;
     height: 400px;
-    background: linear-gradient(rgba(7, 0, 135, 0.2), rgba(4, 0, 52, 0.2)),
+    background: linear-gradient(rgba(7, 0, 135, 0.2), rgba(13, 0, 158, 0.2)),
       url('../images/styles.jpg');
     background-size: cover;
     background-position: center;
