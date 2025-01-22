@@ -37,18 +37,12 @@ nav {
   color: #555;
   font-weight: bold;
   padding: 10px 15px;
-  transition: 0.3s;
-}
-
-.arh::after {
-  content: ' ▼';
-  font-size: 14px;
 }
 
 .menu li a:hover {
   background: #683548;
   color: white;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .submenu {
@@ -173,23 +167,14 @@ nav {
 
 .buttons a {
   padding: 8px 16px; 
-  background-color: #683548;
+  background-color: #a64166;
   text-decoration: none;
   border-radius: 4px;
   color: #fff;
   justify-content: center;
 }
-.b1:hover {
+.buttons a:hover {
   background: #678ecc;
-}
-.b2:hover {
-  background: #9a7dc5;
-}
-.b3:hover {
-  background: #7dae73;
-}
-.b4:hover {
-  background: #7d8192;
 }
 
 /* футер */

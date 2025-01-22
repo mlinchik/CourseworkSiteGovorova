@@ -37,18 +37,12 @@ nav {
   color: #555;
   font-weight: bold;
   padding: 10px 15px;
-  transition: 0.3s;
-}
-
-.arh::after {
-  content: ' ▼';
-  font-size: 14px;
 }
 
 .menu li a:hover {
   background: #683548;
   color: white;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .submenu {
@@ -160,15 +154,17 @@ nav {
   margin-bottom: 30px;
   font-size: 18px;
 }
+
 .info h2 {
   font-size: 28px;
-  margin: 0px 20px;
+  margin: 20px 20px;
   text-align: center;
   display: inline-flex;
-  margin-bottom: 20px;
 }
+
 .buttons {
   text-align: center;
+  position: relative;
 }
 
 .buttons a {
@@ -178,18 +174,55 @@ nav {
   border-radius: 4px;
   color: #fff;
   justify-content: center;
+  position: relative;
 }
+
+.tooltip-text {
+  visibility: hidden;
+  width: 240px;
+  background-color: #fae1c0;
+  color: #333;
+  text-align: left;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 80px;
+  font-size: 18px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: outset 5px #cb5b3f;
+  font-weight: normal;
+}
+
 .b1:hover {
   background: #678ecc;
 }
+
+.b1:hover+.tooltip-text {
+  visibility: visible;
+}
+
 .b2:hover {
   background: #9a7dc5;
 }
+.b2:hover+.tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .b3:hover {
   background: #7dae73;
 }
+.b3:hover+.tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .b4:hover {
-  background: #7d8192;
+  background: #85899b;
+}
+.b4:hover+.tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* футер */

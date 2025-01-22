@@ -37,18 +37,12 @@ nav {
   color: #555;
   font-weight: bold;
   padding: 10px 15px;
-  transition: 0.3s;
-}
-
-.arh::after {
-  content: ' ▼';
-  font-size: 14px;
 }
 
 .menu li a:hover {
   background: #683548;
   color: white;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .submenu {
