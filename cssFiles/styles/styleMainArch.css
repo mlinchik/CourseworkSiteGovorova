@@ -130,39 +130,62 @@ nav {
 /* основний вміст */
 .info {
   padding: 20px 0;
-  margin-right: 90px;
-  margin-left: 90px;
+  margin: 0 90px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.7);
-  ;
   color: #333;
 }
 
 .info h1 {
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 90px;
   font-size: 28px;
   text-align: center;
 }
 
 .info p {
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 20px 90px 30px;
   font-size: 18px;
 }
-.info h2 {
+/* Блоки */
+.card {
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border-style: groove;
+}
+.card img {
+  max-width: 50%;
+  height: auto;
+  margin: 0 20px;
+}
+.card-content {
+  text-align: left;
+  padding: 20px;
+  margin: auto auto;
+}
+
+.card-content h1 {
+  font-size: 24px;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 18px;
+  margin: 10px 0;
+}
+/* Кнопки */
+.buttons {
+  text-align: center;
+}
+.buttons h1 {
   font-size: 28px;
   margin: 0px 20px;
   text-align: center;
   display: inline-flex;
   margin-bottom: 20px;
-}
-.buttons {
-  text-align: center;
 }
 
 .buttons a {
